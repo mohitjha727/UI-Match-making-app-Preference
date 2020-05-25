@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bgnew"
+    tools:context=".ui.home.HomeFragment">
+
+    <ScrollView
+        android:id="@+id/myscroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="100dp">
+
+            <TextView
+                android:id="@+id/age_pref"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/age_preference"
+                android:textColor="#FFFDFD"
+                android:textSize="36sp"
+                android:layout_margin="15dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/layout3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/age_pref">
+
+                <com.akaita.android.circularseekbar.CircularSeekBar
+                    android:id="@+id/seekbar"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    app:enabled="true"
+                    app:innerCircleColor="#9C646A"
+                    app:min="18"
+                    app:max="60"
+                    app:progress="18"
+                    app:progressTextColor="#FFFFFF"
+                    app:progressTextSize="24"
+                    app:ringColor="@color/colorAccent"
+                    app:ringWidth="0.5"
+                    app:showIndicator="true"
+                    app:showInnerCircle="true"
+                    app:showProgressText="true"
+                    app:speedMultiplier="2"
+                    />
+
+                <TextView
+                    android:id="@+id/min_age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/min_age"
+                    android:textColor="#FAFAFB"
+                    android:layout_margin="10dp"
+                    android:textSize="18sp"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layout4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/age_pref">
+
+                <com.akaita.android.circularseekbar.CircularSeekBar
+                    android:id="@+id/seekbar1"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    app:enabled="true"
+                    app:innerCircleColor="#9C646A"
+                    app:min="18"
+                    app:max="60"
+                    app:progress="19"
+                    app:progressTextColor="#FFFFFF"
+                    app:progressTextSize="24"
+                    app:ringColor="#2FE41B"
+                    app:ringWidth="0.5"
+                    app:showIndicator="true"
+                    app:showInnerCircle="true"
+                    app:showProgressText="true"
+                    app:speedMultiplier="2"
+                    />
+
+
+                <TextView
+                    android:id="@+id/max_age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/max_age"
+                    android:textColor="#FAFAFB"
+                    android:layout_margin="10dp"
+                    android:layout_gravity="center"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/age_pref_sugg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FAFAFB"
+                android:gravity="center"
+                android:layout_below="@+id/layout3"
+                android:layout_margin="5dp"
+                android:text="@string/select_your_min_and_max_age_preference"/>
+
+            <TextView
+                android:id="@+id/age_pref_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FAFAFB"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:layout_below="@id/age_pref_sugg"
+                android:text="@string/you_can_tap_on_center_to_reset"/>
+
+    <TextView
+        android:id="@+id/interest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/interested_in"
+        android:layout_below="@id/age_pref_sugg"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_margin="25dp"
+        android:textColor="#FAFAFB"/>
+
+
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/interest"
+        android:orientation="vertical"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="80dp">
+
+    <ImageView
+        android:id="@+id/malepic"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/malenew"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/male"
+        android:textColor="#FFFDFD"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_below="@+id/malepic"/>
+
+        <ImageView
+            android:id="@+id/heartblank"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/whiteheart"
+            android:layout_gravity="center"
+            android:layout_below="@+id/layout1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/interest"
+        android:orientation="vertical"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="80dp">
+
+    <ImageView
+        android:id="@+id/femalepic"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:src="@drawable/femalenew"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/female"
+            android:textColor="#FFFDFD"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="center"
+            android:layout_below="@+id/femalepic"/>
+
+        <ImageView
+            android:id="@+id/heartred"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:src="@drawable/red_heart"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/layout1" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/pref1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/select_your_gender_preference"
+        android:textColor="#FFFDFD"
+        android:textSize="18sp"
+        android:layout_margin="15dp"
+        android:layout_below="@id/layout2"/>
+
+    <TextView
+        android:id="@+id/pref_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/make_the_hear_red_by_choosing_your_preference"
+        android:textColor="#FFFDFD"
+        android:textSize="14sp"
+        android:layout_margin="5dp"
+        android:layout_below="@id/pref1"/>
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

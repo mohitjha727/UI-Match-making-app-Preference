@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Dating app</string>
+    <string name="title_home">Match preference</string>
+    <string name="title_dashboard">App preference</string>
+    <string name="interested_in">Interested In</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="select_your_gender_preference">Select your gender preference</string>
+    <string name="age_preference">Age preference</string>
+    <string name="make_the_hear_red_by_choosing_your_preference">(Make the heart red by choosing your preference)</string>
+    <string name="min_age">Min Age</string>
+    <string name="max_age">Max age</string>
+    <string name="you_can_tap_on_center_to_reset">(You can tap on center of the ring to reset)</string>
+    <string name="select_your_min_and_max_age_preference">Select your min and max age preference</string>
+    <string name="you_told_to_design_only_single_view">This view is not designed.</string>
+</resources>
